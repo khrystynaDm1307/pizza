@@ -1,0 +1,144 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "discounts": [
+    {
+      "id": 5,
+      "title": "Шалений вівторок!",
+      "text": "Щовівторка Domino's проводить неймовірну акцію «Шалений вівторок» – купуй одну середню або велику піцу та отримуй другу зі знижкою 70%! В акції не беруть участі піци діаметром 22 сантиметри. Згідно з умовами акції, піца зі знижкою повинна бути з меню без додавання інгредієнтів. Акція діє при замовленні у піцеріях, на винос чи доставку. Знижка надається на менший товар у чеку. Акція не сумується з іншими акційними пропозиціями. При використовуванні цієї знижки програма лояльності «Domino`s club» діє лише на списання бонусів.",
+      "src": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2F2703v4vv3ao?alt=media&token=b8c88627-1dc3-460e-9350-cd1adf7dcb21"
+    },
+    {
+      "id": 6,
+      "title": "Велика піца за 119.99 грн!",
+      "text": "Замовляй у Domino's велику піцу діаметром 36 см з категорії «Краща ціна» усього за 119,99 грн замість 197.99 грн! До категорії входять - Маргарита, Пепероні з томатами та Техас. Акція діє кожен понеділок, середу та четвер при замовленні в піцерії та з собою. Акція не розповсюджується на доставку. Акція не сумується з іншими акційними пропозиціями. В акційних піцах недоступна заміна або додавання інгредієнтів. Подвійна моцарела та борти «Філадельфія» та «Хот-Дог» до акційних піц додаються за окремою ціною. *Під 1 кг мається на увазі вага піци Маргарита 36 см на стандартному тісті. Вага піци на тонкому тісті значно менша ніж на стандартному. Вага кожної піци може відрізнятися до 10% в залежності від піци (Маргарита, Пепероні з томатами та Техас), коефіцієнту ужарювання та ручного приготовання продукції",
+      "src": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2Fhccv327h1yo?alt=media&token=5b1b72f6-6411-47c2-8ea0-2b767c8322c8"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "pizza"
+    },
+    {
+      "id": 2,
+      "name": "salad"
+    },
+    {
+      "id": 3,
+      "name": "drinks"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "pizza",
+      "name": "Техас",
+      "description": "Ковбаски баварські, Соус Барбекю, Кукурудза, Моцарелла, Гриби, Цибуля",
+      "price": 80,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2Fc7cuy24stys?alt=media&token=99948c46-4839-4dd9-b18c-c5a5380dd907"
+    },
+    {
+      "id": 2,
+      "category": "pizza",
+      "name": " Гавайська",
+      "description": "Курка, Соус Domino's, Моцарелла, Ананас",
+      "price": 110,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2Fahx6tp4qad?alt=media&token=5a4200ce-0d8d-42d4-8223-ba9560bcca22"
+    },
+    {
+      "id": 3,
+      "category": "pizza",
+      "name": "Карбонара",
+      "description": "Соус Альфредо, Бекон, Шинка, Моцарелла, Гриби, Цибуля",
+      "price": 110,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2Fcgfrcj5iiil?alt=media&token=1b22246d-0641-470e-a57e-29bfd2353ee8"
+    },
+    {
+      "id": 4,
+      "category": "pizza",
+      "name": "Пепероні",
+      "description": "Соус Domino's, Моцарелла, Пепероні",
+      "price": 80,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2Fzryyjm5ctt?alt=media&token=27924fa2-2b05-4bd3-bbdc-ac0b4c16c5e1"
+    },
+    {
+      "id": 8,
+      "category": "drinks",
+      "name": "Pepsi",
+      "description": "0.5 л",
+      "price": 19,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2F7i190dg3pr5?alt=media&token=03373fec-281c-47bc-8cae-4ed8ec8df260"
+    },
+    {
+      "id": 9,
+      "category": "drinks",
+      "name": "Мінеральна вода",
+      "description": "0.5 л",
+      "price": 10,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2F572damhxctj?alt=media&token=e07720bf-f414-477a-acc2-d5b5c7284496"
+    },
+    {
+      "id": 10,
+      "category": "salad",
+      "name": "Салат з куркою",
+      "price": 84,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2F8xdzl47xwtm?alt=media&token=0736c42f-5481-492f-b272-199be923645c"
+    },
+    {
+      "id": 11,
+      "category": "salad",
+      "name": "Салат з моцарелою",
+      "description": "",
+      "price": 84,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2Fajr318qclal?alt=media&token=3572a177-330f-44ba-bad6-ee268b03a033"
+    },
+    {
+      "id": 12,
+      "category": "salad",
+      "name": "Салат зі шпинатом",
+      "description": "",
+      "price": 72,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2Fkmlvk4xog9?alt=media&token=61f7d6ca-23ea-417b-a4f0-41de30a26df4"
+    },
+    {
+      "id": 13,
+      "category": "salad",
+      "name": "Салат з тунцем",
+      "description": "",
+      "price": 124,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2Fim6qewdhaf?alt=media&token=80eee4d4-d99d-44fd-b789-ca556c12f748"
+    },
+    {
+      "id": 14,
+      "category": "pizza",
+      "name": "МітZZа",
+      "description": "Моцарелла, Пармезан, Бекон, Шинка, Ковбаски баварські, Пепероні, Соус Domino's",
+      "price": 182,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2Fvwm1c3skn79?alt=media&token=24c0cc07-7c81-4df5-9a70-0ceb93779ce3"
+    },
+    {
+      "id": 15,
+      "category": "pizza",
+      "name": "Americana",
+      "description": "Моцарелла, Бекон, Шинка, Пепероні, Соус Domino's",
+      "price": 167,
+      "image": "https://firebasestorage.googleapis.com/v0/b/la-piec-64a69.appspot.com/o/images%2Fn5mhpoq9j6p?alt=media&token=3bfc7c1f-ebca-4dd0-b306-16fb08a08908"
+    }
+  ]
+}

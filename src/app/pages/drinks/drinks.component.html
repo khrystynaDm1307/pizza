@@ -1,0 +1,11 @@
+<div class="container">
+    <div *ngFor="let prod of products" class="card mt-2" >
+      <img [src]="prod.image" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{prod.name}}</h5>
+        <p class="card-text">{{prod.description}}</p>
+        <span class="card-text">{{prod.price}} грн</span>
+        <a [routerLink]="[ '/pizza', prod.id ]" class="btn btn-warning">more details</a>
+      </div>
+    </div>
+  </div>

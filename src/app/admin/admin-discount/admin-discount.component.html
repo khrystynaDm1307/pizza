@@ -1,0 +1,65 @@
+<form>
+  <div class="form-group">
+    <input [(ngModel)]="title" name="title" type="text" class="form-control" placeholder="title here...">
+  </div>
+  <div class="form-group">
+    <textarea [(ngModel)]="text" name="text" class="form-control" rows="3" placeholder="text here..."></textarea>
+  </div>
+  <div class="form-group row">
+    <div class="card-body">
+      <h5 class="card-title">Select a file for upload:</h5>
+      <!-- <input type="file" (change)="upload($event)" accept=".png,.jpg" /> -->
+      <input type="file" (change)="upload($event)" accept=".png,.jpg" />
+      <br><br>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+          [style.width]="(uploadProgress | async) + '%'" [attr.aria-valuenow]="(uploadProgress | async)"
+          aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <br>
+      <div *ngIf="downloadURL | async; let downloadSrc" class="alert alert-info" role="alert">
+        File uploaded: <a [href]="downloadSrc">{{downloadSrc}}</a>
+      </div>
+      <br>
+      <div class="btn-group" role="group" *ngIf="uploadState | async; let state">
+        <button type="button" class="btn btn-primary" (click)="task.pause()"
+          [disabled]="state === 'paused'">Pause</button>
+        <button type="button" class="btn btn-primary" (click)="task.cancel()"
+          [disabled]="!(state === 'paused' || state === 'running')">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="task.resume()"
+          [disabled]="state === 'running'">Resume</button>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <button *ngIf="!editStatus" (click)="addDiscount()" type="button" class="btn btn-block btn-success">Add</button>
+    <button *ngIf="editStatus" (click)="saveEditDiscount()" type="button" class="btn btn-block btn-success">Save Edit</button>
+  </div>
+</form>
+<hr>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Text</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dis of adminDiscounts; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{dis.title}}</td>
+            <td>{{dis.text}}</td>
+            <td>
+                <button class="btn btn-success" (click)="editDiscount(dis)">Edit</button>
+            </td>
+            <td>
+                <button [disabled]="editStatus" class="btn btn-danger" (click)="deleteDiscount(dis)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+<!-- <button (click)="getDisData()">getData</button> -->

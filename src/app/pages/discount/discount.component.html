@@ -1,0 +1,12 @@
+<div class="container">
+  <div *ngFor="let discount of discounts" class="cardB mt-2" >
+    <div class="forImg">
+        <img [src]="discount.src" class="card-img-top" alt="...">
+    </div>
+    <div class="forText">
+      <h2 class="card-title">{{discount.title}}</h2>
+      <p class="card-text">{{discount.text}}</p>
+      <a href="#" class="btn btn-danger">Go somewhere</a>
+    </div>
+  </div>
+</div>
